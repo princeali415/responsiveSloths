@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face{
+    font-family: jungle;
+    src:url(jungle.ttf)
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;    /* add padding to div but div wont get bigger*/
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 140px;
+    padding: 20px;
+    background: rgba(115,167,136,1);
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    background: url(images/logo.png) no-repeat;
+    background-size: 100px;
+    font-family: jungle;
+    font-size: 3rem;
+    color: #135e46;
+    padding-left: 100px;
+    text-shadow: 3px 3px black;
+    transition: .3s;
+}
+
+.logo:hover {
+    transform: translate(10px);
+    color: white;
+}
+
+nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    font-family: jungle;
+    color: #b67b65;
+    font-size: 1.8rem;
+    text-shadow: 3px 3px black;
+    transition: .2s;
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(1.3);
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background: url(images/slothStare.jpg) no-repeat;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+banner:hover{
+    opacity:1;
+}
+
+.slothText {
+    width: 30%;
+    height: auto;
+    background: rgba(115,167,136,.8);
+    border-radius: 10px;
+    padding:15px;
+    margin-right: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    transition: .5s;
+    font-size: 1.5rem;
+}
